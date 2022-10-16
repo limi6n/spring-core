@@ -1,8 +1,10 @@
 package hello.core.member;
 
+import org.springframework.stereotype.Component;
+
 import java.util.HashMap;
 import java.util.Map;
-
+@Component
 public class MemoryMemberRepository implements MemberRepository{
 
     // TODO 실제 개발 시에는 동시성 이슈가 있기 때문에 "ConCurrentHashMap" 을 사용하는 경우가 많다.
